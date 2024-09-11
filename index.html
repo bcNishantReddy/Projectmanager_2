@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Project Manager</h1>
+        <button id="add-task-btn">Add New Project</button>
+        <button id="add-column-btn">Add New Column</button>
+    </div>
+
+    <div id="board">
+        <!-- Columns will be dynamically added here -->
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <button id="close-sidebar" class="close-btn">✖</button>
+        <h3>Edit Task</h3>
+        <label for="task-name">Task Name</label>
+        <input type="text" id="task-name-input" placeholder="Task Name">
+        <label for="task-short-note">Short Notes</label>
+        <input type="text" id="task-short-note-input" placeholder="Add a short note...">
+        <label for="task-notes">Notes</label>
+        <textarea id="task-notes-input" placeholder="Add notes here..."></textarea>
+        <label for="task-links">Link</label>
+        <input type="text" id="task-links-input" placeholder="Add relevant link">
+        <label for="task-references">Reference</label>
+        <input type="text" id="task-references-input" placeholder="Add reference link">
+        <button id="delete-task">Delete Project</button>
+        <button id="save-task-details">Save</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
